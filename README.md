@@ -12,7 +12,7 @@ specfile contents.
 ## 🎯 Original Motivation
 
 The original idea and need arose from [this Copr
-issue](https://github.com/fedora-copr/copr/issues/3775), but a similar problem
+issue](https://github.com/fedora-copr/copr/issues/1315), but a similar problem
 is being solved in Konflux.
 
 Given a random specfile, along with the `ExcludeArch`, `ExclusiveArch`,
