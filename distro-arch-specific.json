@@ -16,6 +16,8 @@
         "centos-stream-8",
         "centos-stream-9",
         "epel-10",
+        "epel-8",
+        "epel-9",
         "fedora-eln",
         "mageia-8",
         "mageia-9",
@@ -26,6 +28,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-8",
         "rhel-9"
@@ -82,6 +86,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-eln",
         "mageia-8",
         "mageia-9",
@@ -92,6 +98,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -138,6 +146,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -152,6 +162,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -186,7 +198,9 @@
       },
       "tags": [
         "epel-10",
+        "epel-9",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-9"
       ]
@@ -249,6 +263,8 @@
         "value": "%{expand:%{lua:\n  -- test if our arch matches\n  local function arch(archmacro)\n    local target = rpm.expand(\" %{_target_cpu} \")\n    local arches = rpm.expand(\" \" .. archmacro .. \" \")\n    local match = string.match(arches, target)\n    return (match ~= nil)\n  end\n  -- give us the arch...\n  local function getarch()\n    if arch(\"ia64\") then\n      return(\"ia64\")\n    elseif arch(\"x86_64\") then\n      return(\"x64\")\n    elseif arch(\"%{ix86}\") then\n      return(\"ia32\")\n    elseif arch(\"aarch64\") then\n      return(\"aa64\")\n    elseif arch(\"%{arm}\") then\n      return(\"arm\")\n    else\n      return(\"none\")\n    end\n  end\n  -- alt arch\n  local function getaltarch()\n    if arch(\"x86_64\") then\n      return(\"ia32\")\n    else\n      return(\"none\")\n    end\n  end\n  -- make some macros\n  local done = rpm.expand(\"%{?_efi}\")\n  if done == nil or done == \"\" then\n    local arch = getarch()\n    local alt = getaltarch()\n    print(\"%global _efi x86_64 aarch64 %{arm} %{ix86}\\n\")\n    print(\"%global _efi_vendor redhat\\n\")\n    if arch == \"none\" then\n      print(\"%global _efi_has_arch 0\\n\")\n    else\n      print(\"%global _efi_has_arch 1\\n\")\n    end\n    print(\"%global _efi_arch \" .. getarch() .. \"\\n\")\n    print(\"%global _efi_arch_upper \" .. string.upper(getarch()) .. \"\\n\")\n    if alt == \"none\" then\n      print(\"%global _efi_has_alt_arch 0\\n\")\n    else\n      print(\"%global _efi_has_alt_arch 1\\n\")\n    end\n    print(\"%global _efi_alt_arch \" .. alt .. \"\\n\")\n    print(\"%global _efi_alt_arch_upper \" .. string.upper(alt) .. \"\\n\")\n  end\n}}"
       },
       "tags": [
+        "epel-8",
+        "rhel+epel-8",
         "rhel-8"
       ]
     },
@@ -321,6 +337,7 @@
         "centos-stream-10",
         "centos-stream-9",
         "epel-10",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -333,6 +350,7 @@
         "openeuler-22.03",
         "openeuler-24.03",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-9"
       ]
@@ -345,6 +363,8 @@
       "tags": [
         "centos-stream+epel-next-8",
         "centos-stream-8",
+        "epel-8",
+        "rhel+epel-8",
         "rhel-8"
       ]
     },
@@ -396,6 +416,7 @@
         "centos-stream-10",
         "centos-stream-9",
         "epel-10",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -407,6 +428,7 @@
         "openeuler-22.03",
         "openeuler-24.03",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-9"
       ]
@@ -418,8 +440,10 @@
         "centos-stream+epel-next-8",
         "centos-stream-8",
         "epel-7",
+        "epel-8",
         "openeuler-20.03",
         "opensuse-leap-15.6",
+        "rhel+epel-8",
         "rhel-7",
         "rhel-8"
       ]
@@ -452,6 +476,7 @@
         "centos-stream-10",
         "centos-stream-9",
         "epel-10",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -464,6 +489,7 @@
         "openeuler-24.03",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-9"
       ]
@@ -475,8 +501,10 @@
         "centos-stream+epel-next-8",
         "centos-stream-8",
         "epel-7",
+        "epel-8",
         "openeuler-20.03",
         "opensuse-leap-15.6",
+        "rhel+epel-8",
         "rhel-7",
         "rhel-8"
       ]
@@ -488,6 +516,8 @@
       "tags": [
         "amazonlinux-2023",
         "epel-10",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -502,6 +532,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -573,6 +605,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -587,6 +621,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -614,6 +650,8 @@
         "centos-stream-8",
         "centos-stream-9",
         "epel-10",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -625,6 +663,8 @@
         "openeuler-22.03",
         "openeuler-24.03",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-8",
         "rhel-9"
@@ -655,6 +695,8 @@
         "centos-stream-8",
         "centos-stream-9",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -668,6 +710,8 @@
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -709,6 +753,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -722,6 +768,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -757,6 +805,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -771,6 +821,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -795,6 +847,8 @@
         "centos-stream-8",
         "centos-stream-9",
         "epel-10",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -809,6 +863,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-8",
         "rhel-9"
@@ -843,6 +899,7 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -857,6 +914,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-9"
@@ -870,6 +928,8 @@
       "tags": [
         "centos-stream+epel-next-8",
         "centos-stream-8",
+        "epel-8",
+        "rhel+epel-8",
         "rhel-8"
       ]
     }
@@ -889,6 +949,7 @@
         "centos-stream-8",
         "epel-10",
         "epel-7",
+        "epel-8",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -903,6 +964,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
         "rhel-10",
         "rhel-7",
         "rhel-8"
@@ -918,6 +980,8 @@
         "almalinux-9",
         "centos-stream+epel-next-9",
         "centos-stream-9",
+        "epel-9",
+        "rhel+epel-9",
         "rhel-9"
       ]
     }
@@ -981,7 +1045,9 @@
       },
       "tags": [
         "alma+epel-9",
-        "centos-stream+epel-next-9"
+        "centos-stream+epel-next-9",
+        "epel-9",
+        "rhel+epel-9"
       ]
     },
     {
@@ -990,7 +1056,9 @@
         "value": "8"
       },
       "tags": [
-        "centos-stream+epel-next-8"
+        "centos-stream+epel-next-8",
+        "epel-8",
+        "rhel+epel-8"
       ]
     }
   ],
@@ -1013,6 +1081,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -1027,6 +1097,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -1053,6 +1125,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-42",
         "fedora-43",
         "fedora-eln",
@@ -1066,6 +1140,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -1101,6 +1177,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-43",
         "fedora-eln",
@@ -1114,6 +1192,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -1149,6 +1229,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-eln",
@@ -1162,6 +1244,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -1197,6 +1281,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -1210,6 +1296,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -1245,6 +1333,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -1259,6 +1349,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -1284,6 +1376,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-eln",
         "mageia-8",
         "mageia-9",
@@ -1294,6 +1388,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -1385,11 +1481,13 @@
         "alma-kitten+epel-10",
         "centos-stream+epel-next-9",
         "epel-10",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
         "fedora-rawhide",
-        "rhel+epel-10"
+        "rhel+epel-10",
+        "rhel+epel-9"
       ]
     },
     {
@@ -1398,7 +1496,9 @@
         "value": "i386 i486 i586 i686 pentium3 pentium4 athlon geode armv3l armv4b armv4l armv4tl armv5tl armv5tel armv5tejl armv6l armv6hl armv7l armv7hl armv7hnl x86_64 ppc64le aarch64"
       },
       "tags": [
-        "centos-stream+epel-next-8"
+        "centos-stream+epel-next-8",
+        "epel-8",
+        "rhel+epel-8"
       ]
     }
   ],
@@ -1422,6 +1522,8 @@
         "centos-stream-8",
         "centos-stream-9",
         "epel-10",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -1434,6 +1536,8 @@
         "openeuler-22.03",
         "openeuler-24.03",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-8",
         "rhel-9"
@@ -1483,7 +1587,9 @@
         "centos-stream+epel-next-9",
         "centos-stream-9",
         "epel-10",
+        "epel-9",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-9"
       ]
@@ -1496,6 +1602,8 @@
       "tags": [
         "centos-stream+epel-next-8",
         "centos-stream-8",
+        "epel-8",
+        "rhel+epel-8",
         "rhel-8"
       ]
     },
@@ -1587,7 +1695,9 @@
         "centos-stream+epel-next-9",
         "centos-stream-9",
         "epel-10",
+        "epel-9",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-9"
       ]
@@ -1600,6 +1710,8 @@
       "tags": [
         "centos-stream+epel-next-8",
         "centos-stream-8",
+        "epel-8",
+        "rhel+epel-8",
         "rhel-8"
       ]
     },
@@ -1666,12 +1778,14 @@
         "centos-stream+epel-next-8",
         "centos-stream-8",
         "epel-7",
+        "epel-8",
         "mageia-8",
         "openeuler-20.03",
         "openeuler-22.03",
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-8",
         "rhel-7",
         "rhel-8"
       ]
@@ -1706,8 +1820,11 @@
       },
       "tags": [
         "almalinux-9",
+        "centos-stream+epel-next-9",
         "centos-stream-9",
+        "epel-9",
         "mageia-9",
+        "rhel+epel-9",
         "rhel-9"
       ]
     },
@@ -1717,8 +1834,7 @@
         "value": "x86_64 aarch64 ppc64le s390x"
       },
       "tags": [
-        "alma+epel-9",
-        "centos-stream+epel-next-9"
+        "alma+epel-9"
       ]
     }
   ],
@@ -1742,6 +1858,8 @@
         "centos-stream-8",
         "centos-stream-9",
         "epel-10",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -1754,6 +1872,8 @@
         "openeuler-22.03",
         "openeuler-24.03",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-8",
         "rhel-9"
@@ -1789,6 +1909,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -1803,6 +1925,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -1829,6 +1953,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -1843,6 +1969,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -1869,6 +1997,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -1883,6 +2013,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -1909,6 +2041,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "mageia-8",
         "mageia-9",
@@ -1919,6 +2053,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -1960,6 +2096,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -1974,6 +2112,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -2029,9 +2169,13 @@
         "centos-stream+epel-next-8",
         "centos-stream+epel-next-9",
         "centos-stream-9",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "mageia-9",
         "mageia-cauldron",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-9"
       ]
     },
@@ -2075,7 +2219,9 @@
         "centos-stream+epel-next-9",
         "centos-stream-9",
         "epel-10",
+        "epel-9",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-9"
       ]
@@ -2088,6 +2234,8 @@
       "tags": [
         "centos-stream+epel-next-8",
         "centos-stream-8",
+        "epel-8",
+        "rhel+epel-8",
         "rhel-8"
       ]
     },
@@ -2159,12 +2307,14 @@
         "centos-stream-10",
         "centos-stream-9",
         "epel-10",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
         "fedora-eln",
         "fedora-rawhide",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-9"
       ]
@@ -2177,6 +2327,8 @@
       "tags": [
         "centos-stream+epel-next-8",
         "centos-stream-8",
+        "epel-8",
+        "rhel+epel-8",
         "rhel-8"
       ]
     }
@@ -2200,6 +2352,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -2214,6 +2368,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -2241,6 +2397,8 @@
         "centos-stream-8",
         "centos-stream-9",
         "epel-10",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -2255,6 +2413,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-8",
         "rhel-9"
@@ -2289,6 +2449,8 @@
         "centos-stream-8",
         "centos-stream-9",
         "epel-10",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -2303,6 +2465,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-8",
         "rhel-9"
@@ -2337,6 +2501,8 @@
         "centos-stream-8",
         "centos-stream-9",
         "epel-10",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -2351,6 +2517,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-8",
         "rhel-9"
@@ -2393,6 +2561,7 @@
         "centos-stream-10",
         "centos-stream-9",
         "epel-10",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -2402,6 +2571,7 @@
         "mageia-9",
         "mageia-cauldron",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-9"
       ]
@@ -2412,6 +2582,7 @@
         "value": "i386 i486 i586 i686 pentium3 pentium4 athlon geode x86_64 sparc sparcv9 ia64 armv3l armv4b armv4l armv4tl armv5tl armv5tel armv5tejl armv6l armv6hl armv7l armv7hl armv7hnl aarch64 alpha s390x ppc ppc64 ppc64le"
       },
       "tags": [
+        "centos-stream+epel-next-8",
         "centos-stream-8",
         "rhel-8"
       ]
@@ -2433,7 +2604,8 @@
         "value": "i386 i486 i586 i686 pentium3 pentium4 athlon geode x86_64 sparc sparcv9 ia64 armv3l armv4b armv4l armv4tl armv5tl armv5tel armv5tejl armv6l armv6hl armv7l armv7hl armv7hnl alpha s390x ppc ppc64 ppc64le"
       },
       "tags": [
-        "centos-stream+epel-next-8"
+        "epel-8",
+        "rhel+epel-8"
       ]
     }
   ],
@@ -2456,6 +2628,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -2470,6 +2644,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -2522,7 +2698,9 @@
         "amazonlinux-2023",
         "centos-stream+epel-next-9",
         "centos-stream-9",
+        "epel-9",
         "fedora-41",
+        "rhel+epel-9",
         "rhel-9"
       ]
     },
@@ -2534,6 +2712,8 @@
       "tags": [
         "centos-stream+epel-next-8",
         "centos-stream-8",
+        "epel-8",
+        "rhel+epel-8",
         "rhel-8"
       ]
     },
@@ -2593,8 +2773,10 @@
         "amazonlinux-2023",
         "centos-stream+epel-next-9",
         "centos-stream-9",
+        "epel-9",
         "mageia-8",
         "mageia-9",
+        "rhel+epel-9",
         "rhel-9"
       ]
     },
@@ -2606,6 +2788,8 @@
       "tags": [
         "centos-stream+epel-next-8",
         "centos-stream-8",
+        "epel-8",
+        "rhel+epel-8",
         "rhel-8"
       ]
     },
@@ -2672,6 +2856,10 @@
         "centos-stream+epel-next-9",
         "centos-stream-8",
         "centos-stream-9",
+        "epel-8",
+        "epel-9",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-8",
         "rhel-9"
       ]
@@ -2699,6 +2887,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -2713,6 +2903,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -2744,7 +2936,9 @@
         "almalinux-9",
         "centos-stream+epel-next-9",
         "centos-stream-9",
+        "epel-9",
         "openeuler-20.03",
+        "rhel+epel-9",
         "rhel-9"
       ]
     },
@@ -2788,7 +2982,9 @@
         "value": "i386 i486 i586 i686 pentium3 pentium4 athlon geode x86_64 armv3l armv4b armv4l armv4tl armv5tl armv5tel armv5tejl armv6l armv6hl armv7l armv7hl armv7hnl aarch64 mips mipsel mips64el"
       },
       "tags": [
-        "centos-stream+epel-next-8"
+        "centos-stream+epel-next-8",
+        "epel-8",
+        "rhel+epel-8"
       ]
     }
   ],
@@ -2803,6 +2999,7 @@
         "centos-stream-8",
         "centos-stream-9",
         "epel-7",
+        "epel-8",
         "mageia-8",
         "mageia-9",
         "mageia-cauldron",
@@ -2811,6 +3008,7 @@
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-8",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -2844,7 +3042,9 @@
       "tags": [
         "alma+epel-9",
         "centos-stream+epel-next-9",
-        "fedora-41"
+        "epel-9",
+        "fedora-41",
+        "rhel+epel-9"
       ]
     }
   ],
@@ -2893,6 +3093,8 @@
         "almalinux-9",
         "centos-stream+epel-next-9",
         "centos-stream-9",
+        "epel-9",
+        "rhel+epel-9",
         "rhel-9"
       ]
     },
@@ -2904,6 +3106,8 @@
       "tags": [
         "centos-stream+epel-next-8",
         "centos-stream-8",
+        "epel-8",
+        "rhel+epel-8",
         "rhel-8"
       ]
     },
@@ -2946,6 +3150,7 @@
         "centos-stream-10",
         "centos-stream-9",
         "epel-10",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -2958,6 +3163,7 @@
         "openeuler-24.03",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-9"
       ]
@@ -2969,8 +3175,10 @@
         "centos-stream+epel-next-8",
         "centos-stream-8",
         "epel-7",
+        "epel-8",
         "openeuler-20.03",
         "opensuse-leap-15.6",
+        "rhel+epel-8",
         "rhel-7",
         "rhel-8"
       ]
@@ -2994,6 +3202,7 @@
         "centos-stream-10",
         "centos-stream-9",
         "epel-10",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3006,6 +3215,7 @@
         "openeuler-24.03",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-9"
       ]
@@ -3017,8 +3227,10 @@
         "centos-stream+epel-next-8",
         "centos-stream-8",
         "epel-7",
+        "epel-8",
         "openeuler-20.03",
         "opensuse-leap-15.6",
+        "rhel+epel-8",
         "rhel-7",
         "rhel-8"
       ]
@@ -3042,6 +3254,7 @@
         "centos-stream-10",
         "centos-stream-9",
         "epel-10",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3054,6 +3267,7 @@
         "openeuler-24.03",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-9"
       ]
@@ -3065,8 +3279,10 @@
         "centos-stream+epel-next-8",
         "centos-stream-8",
         "epel-7",
+        "epel-8",
         "openeuler-20.03",
         "opensuse-leap-15.6",
+        "rhel+epel-8",
         "rhel-7",
         "rhel-8"
       ]
@@ -3090,6 +3306,7 @@
         "centos-stream-10",
         "centos-stream-9",
         "epel-10",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3102,6 +3319,7 @@
         "openeuler-24.03",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-9"
       ]
@@ -3113,8 +3331,10 @@
         "centos-stream+epel-next-8",
         "centos-stream-8",
         "epel-7",
+        "epel-8",
         "openeuler-20.03",
         "opensuse-leap-15.6",
+        "rhel+epel-8",
         "rhel-7",
         "rhel-8"
       ]
@@ -3151,6 +3371,7 @@
         "centos-stream-10",
         "centos-stream-9",
         "epel-10",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3160,6 +3381,7 @@
         "mageia-9",
         "mageia-cauldron",
         "rhel+epel-10",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-9"
       ]
@@ -3172,6 +3394,8 @@
       "tags": [
         "centos-stream+epel-next-8",
         "centos-stream-8",
+        "epel-8",
+        "rhel+epel-8",
         "rhel-8"
       ]
     }
@@ -3198,6 +3422,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3212,6 +3438,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -3238,6 +3466,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3251,6 +3481,8 @@
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -3286,6 +3518,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3300,6 +3534,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -3326,6 +3562,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3340,6 +3578,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -3366,6 +3606,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3380,6 +3622,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -3406,6 +3650,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3420,6 +3666,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -3446,6 +3694,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3460,6 +3710,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -3486,6 +3738,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3500,6 +3754,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -3526,6 +3782,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3540,6 +3798,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -3566,6 +3826,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3580,6 +3842,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -3606,6 +3870,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3620,6 +3886,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -3646,6 +3914,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3660,6 +3930,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -3686,6 +3958,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
@@ -3700,6 +3974,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
@@ -3759,7 +4035,11 @@
       "tags": [
         "alma+epel-9",
         "centos-stream+epel-next-8",
-        "centos-stream+epel-next-9"
+        "centos-stream+epel-next-9",
+        "epel-8",
+        "epel-9",
+        "rhel+epel-8",
+        "rhel+epel-9"
       ]
     }
   ],
@@ -3782,6 +4062,8 @@
         "centos-stream-9",
         "epel-10",
         "epel-7",
+        "epel-8",
+        "epel-9",
         "fedora-eln",
         "mageia-8",
         "mageia-9",
@@ -3792,6 +4074,8 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-8",
+        "rhel+epel-9",
         "rhel-10",
         "rhel-7",
         "rhel-8",
