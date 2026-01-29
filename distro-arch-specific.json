@@ -31,6 +31,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-8",
         "rhel-9"
       ]
@@ -101,6 +102,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -165,6 +167,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -286,7 +289,8 @@
       "tags": [
         "fedora-41",
         "fedora-eln",
-        "fedora-rawhide"
+        "fedora-rawhide",
+        "rhel-11"
       ]
     },
     {
@@ -352,6 +356,7 @@
         "rhel+epel-10",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-9"
       ]
     },
@@ -430,6 +435,7 @@
         "rhel+epel-10",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-9"
       ]
     },
@@ -491,6 +497,7 @@
         "rhel+epel-10",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-9"
       ]
     },
@@ -535,6 +542,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -624,6 +632,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -666,6 +675,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-8",
         "rhel-9"
       ]
@@ -712,6 +722,7 @@
         "opensuse-tumbleweed",
         "rhel+epel-8",
         "rhel+epel-9",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -782,7 +793,8 @@
         "value": "1"
       },
       "tags": [
-        "fedora-eln"
+        "fedora-eln",
+        "rhel-11"
       ]
     }
   ],
@@ -824,6 +836,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -866,6 +879,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-8",
         "rhel-9"
       ]
@@ -916,6 +930,7 @@
         "rhel+epel-10",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-9"
       ]
@@ -966,6 +981,7 @@
         "rhel+epel-10",
         "rhel+epel-8",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8"
       ]
@@ -1011,6 +1027,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -1100,6 +1117,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -1143,6 +1161,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -1195,6 +1214,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -1247,6 +1267,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -1299,6 +1320,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -1352,6 +1374,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -1391,6 +1414,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -1465,6 +1489,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -1539,6 +1564,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-8",
         "rhel-9"
       ]
@@ -1626,7 +1652,8 @@
         "alma-kitten+epel-10",
         "almalinux-kitten-10",
         "centos-stream-10",
-        "fedora-eln"
+        "fedora-eln",
+        "rhel-11"
       ]
     },
     {
@@ -1734,7 +1761,8 @@
         "alma-kitten+epel-10",
         "almalinux-kitten-10",
         "centos-stream-10",
-        "fedora-eln"
+        "fedora-eln",
+        "rhel-11"
       ]
     },
     {
@@ -1810,7 +1838,8 @@
         "fedora-rawhide",
         "mageia-cauldron",
         "rhel+epel-10",
-        "rhel-10"
+        "rhel-10",
+        "rhel-11"
       ]
     },
     {
@@ -1875,6 +1904,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-8",
         "rhel-9"
       ]
@@ -1928,6 +1958,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -1972,6 +2003,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -2016,6 +2048,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -2070,7 +2103,8 @@
         "fedora-42",
         "fedora-43",
         "fedora-eln",
-        "fedora-rawhide"
+        "fedora-rawhide",
+        "rhel-11"
       ]
     }
   ],
@@ -2115,6 +2149,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -2155,7 +2190,8 @@
         "fedora-eln",
         "fedora-rawhide",
         "rhel+epel-10",
-        "rhel-10"
+        "rhel-10",
+        "rhel-11"
       ]
     },
     {
@@ -2248,7 +2284,8 @@
         "alma-kitten+epel-10",
         "almalinux-kitten-10",
         "centos-stream-10",
-        "fedora-eln"
+        "fedora-eln",
+        "rhel-11"
       ]
     },
     {
@@ -2316,6 +2353,7 @@
         "rhel+epel-10",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-9"
       ]
     },
@@ -2371,6 +2409,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -2416,6 +2455,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-8",
         "rhel-9"
       ]
@@ -2468,6 +2508,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-8",
         "rhel-9"
       ]
@@ -2520,6 +2561,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-8",
         "rhel-9"
       ]
@@ -2573,6 +2615,7 @@
         "rhel+epel-10",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-9"
       ]
     },
@@ -2647,6 +2690,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -2684,7 +2728,8 @@
         "fedora-eln",
         "fedora-rawhide",
         "rhel+epel-10",
-        "rhel-10"
+        "rhel-10",
+        "rhel-11"
       ]
     },
     {
@@ -2801,7 +2846,8 @@
       "tags": [
         "fedora-43",
         "fedora-eln",
-        "fedora-rawhide"
+        "fedora-rawhide",
+        "rhel-11"
       ]
     }
   ],
@@ -2840,7 +2886,8 @@
         "fedora-eln",
         "fedora-rawhide",
         "rhel+epel-10",
-        "rhel-10"
+        "rhel-10",
+        "rhel-11"
       ]
     },
     {
@@ -2906,6 +2953,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -2963,6 +3011,7 @@
         "opensuse-tumbleweed",
         "rhel+epel-10",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8"
       ]
@@ -3031,7 +3080,8 @@
         "fedora-eln",
         "fedora-rawhide",
         "rhel+epel-10",
-        "rhel-10"
+        "rhel-10",
+        "rhel-11"
       ]
     },
     {
@@ -3128,7 +3178,8 @@
         "value": "11"
       },
       "tags": [
-        "fedora-eln"
+        "fedora-eln",
+        "rhel-11"
       ]
     }
   ],
@@ -3165,6 +3216,7 @@
         "rhel+epel-10",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-9"
       ]
     },
@@ -3217,6 +3269,7 @@
         "rhel+epel-10",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-9"
       ]
     },
@@ -3269,6 +3322,7 @@
         "rhel+epel-10",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-9"
       ]
     },
@@ -3321,6 +3375,7 @@
         "rhel+epel-10",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-9"
       ]
     },
@@ -3383,6 +3438,7 @@
         "rhel+epel-10",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-9"
       ]
     },
@@ -3441,6 +3497,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -3484,6 +3541,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -3537,6 +3595,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -3581,6 +3640,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -3625,6 +3685,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -3669,6 +3730,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -3713,6 +3775,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -3757,6 +3820,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -3801,6 +3865,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -3845,6 +3910,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -3889,6 +3955,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -3933,6 +4000,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -3977,6 +4045,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -4024,7 +4093,8 @@
         "mageia-cauldron",
         "opensuse-tumbleweed",
         "rhel+epel-10",
-        "rhel-10"
+        "rhel-10",
+        "rhel-11"
       ]
     },
     {
@@ -4077,6 +4147,7 @@
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
+        "rhel-11",
         "rhel-7",
         "rhel-8",
         "rhel-9"
