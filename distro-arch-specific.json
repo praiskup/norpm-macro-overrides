@@ -54,6 +54,7 @@
       "tags": [
         "centos+epel-7",
         "epel-7",
+        "rhel+epel-7",
         "rhel-7"
       ]
     },
@@ -99,6 +100,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -164,6 +166,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -237,6 +240,7 @@
         "mageia-8",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel-7"
       ]
     },
@@ -399,6 +403,7 @@
       "tags": [
         "centos+epel-7",
         "epel-7",
+        "rhel+epel-7",
         "rhel-7"
       ]
     }
@@ -449,6 +454,7 @@
         "epel-8",
         "openeuler-20.03",
         "opensuse-leap-15.6",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel-7",
         "rhel-8"
@@ -511,6 +517,7 @@
         "epel-8",
         "openeuler-20.03",
         "opensuse-leap-15.6",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel-7",
         "rhel-8"
@@ -539,6 +546,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -629,6 +637,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -688,6 +697,7 @@
         "mageia-8",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel-7"
       ]
     }
@@ -720,6 +730,7 @@
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-11",
@@ -779,6 +790,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -833,6 +845,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -892,6 +905,7 @@
       "tags": [
         "centos+epel-7",
         "epel-7",
+        "rhel+epel-7",
         "rhel-7"
       ]
     }
@@ -928,6 +942,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-9",
         "rhel-10",
         "rhel-11",
@@ -979,6 +994,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel-10",
         "rhel-11",
@@ -1052,7 +1068,8 @@
       },
       "tags": [
         "centos+epel-7",
-        "epel-7"
+        "epel-7",
+        "rhel+epel-7"
       ]
     },
     {
@@ -1114,6 +1131,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -1158,6 +1176,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -1211,6 +1230,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -1264,6 +1284,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -1317,6 +1338,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -1371,6 +1393,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -1411,6 +1434,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -1488,6 +1512,7 @@
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel-10",
         "rhel-11",
         "rhel-7",
@@ -1576,6 +1601,7 @@
         "epel-7",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel-7"
       ]
     }
@@ -1640,6 +1666,7 @@
         "epel-7",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel-7"
       ]
     },
@@ -1749,6 +1776,7 @@
         "epel-7",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel-7"
       ]
     },
@@ -1813,6 +1841,7 @@
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel-7",
         "rhel-8"
@@ -1916,6 +1945,7 @@
         "epel-7",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel-7"
       ]
     }
@@ -1955,6 +1985,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -2000,6 +2031,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -2045,6 +2077,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -2086,6 +2119,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -2146,6 +2180,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -2169,6 +2204,7 @@
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel-7",
         "rhel-8"
       ]
@@ -2239,6 +2275,7 @@
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel-7"
       ]
     },
@@ -2324,6 +2361,7 @@
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel-7"
       ]
     },
@@ -2406,6 +2444,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -2465,6 +2504,7 @@
       "tags": [
         "centos+epel-7",
         "epel-7",
+        "rhel+epel-7",
         "rhel-7"
       ]
     }
@@ -2518,6 +2558,7 @@
       "tags": [
         "centos+epel-7",
         "epel-7",
+        "rhel+epel-7",
         "rhel-7"
       ]
     }
@@ -2571,6 +2612,7 @@
       "tags": [
         "centos+epel-7",
         "epel-7",
+        "rhel+epel-7",
         "rhel-7"
       ]
     }
@@ -2638,6 +2680,7 @@
       "tags": [
         "centos+epel-7",
         "epel-7",
+        "rhel+epel-7",
         "rhel-7"
       ]
     },
@@ -2687,6 +2730,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -2770,6 +2814,7 @@
       "tags": [
         "centos+epel-7",
         "epel-7",
+        "rhel+epel-7",
         "rhel-7"
       ]
     }
@@ -2785,6 +2830,7 @@
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel-7"
       ]
     },
@@ -2865,6 +2911,7 @@
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel-7"
       ]
     },
@@ -2950,6 +2997,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -3010,6 +3058,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel-10",
         "rhel-11",
         "rhel-7",
@@ -3057,6 +3106,7 @@
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel-7",
         "rhel-8",
@@ -3169,6 +3219,7 @@
       "tags": [
         "centos+epel-7",
         "epel-7",
+        "rhel+epel-7",
         "rhel-7"
       ]
     },
@@ -3230,6 +3281,7 @@
         "epel-8",
         "openeuler-20.03",
         "opensuse-leap-15.6",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel-7",
         "rhel-8"
@@ -3283,6 +3335,7 @@
         "epel-8",
         "openeuler-20.03",
         "opensuse-leap-15.6",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel-7",
         "rhel-8"
@@ -3336,6 +3389,7 @@
         "epel-8",
         "openeuler-20.03",
         "opensuse-leap-15.6",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel-7",
         "rhel-8"
@@ -3389,6 +3443,7 @@
         "epel-8",
         "openeuler-20.03",
         "opensuse-leap-15.6",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel-7",
         "rhel-8"
@@ -3406,6 +3461,7 @@
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
+        "rhel+epel-7",
         "rhel-7"
       ]
     },
@@ -3494,6 +3550,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -3538,6 +3595,7 @@
         "openeuler-24.03",
         "opensuse-leap-15.6",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -3592,6 +3650,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -3637,6 +3696,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -3682,6 +3742,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -3727,6 +3788,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -3772,6 +3834,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -3817,6 +3880,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -3862,6 +3926,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -3907,6 +3972,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -3952,6 +4018,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -3997,6 +4064,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -4042,6 +4110,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
@@ -4068,6 +4137,7 @@
         "openeuler-22.03",
         "openeuler-24.03",
         "opensuse-leap-15.6",
+        "rhel+epel-7",
         "rhel-7",
         "rhel-8",
         "rhel-9"
@@ -4144,6 +4214,7 @@
         "opensuse-leap-15.6",
         "opensuse-tumbleweed",
         "rhel+epel-10",
+        "rhel+epel-7",
         "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
