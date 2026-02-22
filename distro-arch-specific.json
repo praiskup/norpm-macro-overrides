@@ -670,43 +670,69 @@
     {
       "definition": {
         "params": null,
+        "value": "x86_64 aarch64 loongarch64 sw_64 riscv64"
+      },
+      "tags": [
+        "openeuler-22.03",
+        "openeuler-24.03"
+      ]
+    },
+    {
+      "definition": {
+        "params": null,
+        "value": "x86_64 aarch64"
+      },
+      "tags": [
+        "openeuler-20.03"
+      ]
+    },
+    {
+      "definition": {
+        "params": null,
         "value": "x86_64 aarch64 armv3l armv4b armv4l armv4tl armv5tl armv5tel armv5tejl armv6l armv6hl armv7l armv7hl armv7hnl armv8l armv8hl armv8hnl armv8hcnl i386 i486 i586 i686 pentium3 pentium4 athlon geode riscv64"
       },
       "tags": [
-        "alma+epel-10",
-        "alma+epel-9",
-        "alma-kitten+epel-10",
-        "almalinux-10",
-        "almalinux-9",
-        "almalinux-kitten-10",
-        "amazonlinux-2023",
-        "centos-stream+epel-10",
-        "centos-stream+epel-next-8",
-        "centos-stream+epel-next-9",
-        "centos-stream-10",
-        "centos-stream-8",
-        "centos-stream-9",
-        "epel-10",
-        "epel-8",
-        "epel-9",
         "fedora-41",
         "fedora-42",
         "fedora-43",
         "fedora-44",
         "fedora-eln",
         "fedora-rawhide",
-        "mageia-9",
-        "mageia-cauldron",
-        "openeuler-20.03",
-        "openeuler-22.03",
-        "openeuler-24.03",
+        "rhel-11"
+      ]
+    },
+    {
+      "definition": {
+        "params": null,
+        "value": "x86_64 aarch64 armv3l armv4b armv4l armv4tl armv5tl armv5tel armv5tejl armv6l armv6hl armv7l armv7hl armv7hnl armv8l armv8hl armv8hnl armv8hcnl i386 i486 i586 i686 pentium3 pentium4 athlon geode"
+      },
+      "tags": [
+        "alma+epel-9",
+        "almalinux-9",
+        "amazonlinux-2023",
+        "centos-stream+epel-10",
+        "centos-stream+epel-next-9",
+        "centos-stream-10",
+        "centos-stream-9",
+        "epel-10",
+        "epel-9",
         "rhel+epel-10",
-        "rhel+epel-8",
         "rhel+epel-9",
         "rhel-10",
-        "rhel-11",
-        "rhel-8",
         "rhel-9"
+      ]
+    },
+    {
+      "definition": {
+        "params": null,
+        "value": "x86_64 aarch64 armv3l armv4b armv4l armv4tl armv5tl armv5tel armv5tejl armv6l armv6hl armv7l armv7hl armv7hnl i386 i486 i586 i686 pentium3 pentium4 athlon geode"
+      },
+      "tags": [
+        "centos-stream+epel-next-8",
+        "centos-stream-8",
+        "epel-8",
+        "rhel+epel-8",
+        "rhel-8"
       ]
     },
     {
@@ -719,6 +745,36 @@
         "opensuse-tumbleweed",
         "rhel+epel-7",
         "rhel-7"
+      ]
+    },
+    {
+      "definition": {
+        "params": null,
+        "value": "x86_64 x86_64_v2 x86_64_v3 x86_64_v4 amd64 em64t aarch64 armv3l armv4b armv4l armv4tl armv5tl armv5tel armv5tejl armv6l armv6hl armv7l armv7hl armv7hnl armv8l armv8hl armv8hnl armv8hcnl i386 i486 i586 i686 pentium3 pentium4 athlon geode riscv64"
+      },
+      "tags": [
+        "alma-kitten+epel-10",
+        "almalinux-kitten-10"
+      ]
+    },
+    {
+      "definition": {
+        "params": null,
+        "value": "x86_64 aarch64 armv3l armv4b armv4l armv4tl armv5tl armv5tel armv5tejl armv6l armv6hl armv7l armv7hl armv7hnl armv8l armv8hl armv8hnl armv8hcnl i386 i486 i586 i686 pentium3 pentium4 athlon k6"
+      },
+      "tags": [
+        "mageia-9",
+        "mageia-cauldron"
+      ]
+    },
+    {
+      "definition": {
+        "params": null,
+        "value": "x86_64 x86_64_v2 x86_64_v3 x86_64_v4 amd64 em64t aarch64 armv3l armv4b armv4l armv4tl armv5tl armv5tel armv5tejl armv6l armv6hl armv7l armv7hl armv7hnl armv8l armv8hl armv8hnl armv8hcnl i386 i486 i586 i686 pentium3 pentium4 athlon geode"
+      },
+      "tags": [
+        "alma+epel-10",
+        "almalinux-10"
       ]
     }
   ],
@@ -1951,12 +2007,11 @@
         "value": "x86_64 armv3l armv4b armv4l armv4tl armv5tl armv5tel armv5tejl armv6l armv6hl armv7l armv7hl armv7hnl armv8l armv8hl armv8hnl armv8hcnl aarch64 ppc64le s390x"
       },
       "tags": [
+        "alma+epel-9",
         "almalinux-9",
         "centos-stream+epel-next-9",
         "centos-stream-9",
-        "epel-9",
         "mageia-9",
-        "rhel+epel-9",
         "rhel-9"
       ]
     },
@@ -1966,7 +2021,8 @@
         "value": "x86_64 aarch64 ppc64le s390x"
       },
       "tags": [
-        "alma+epel-9"
+        "epel-9",
+        "rhel+epel-9"
       ]
     }
   ],
@@ -3230,6 +3286,19 @@
     {
       "definition": {
         "params": null,
+        "value": "x86_64 aarch64 ppc64le riscv64"
+      },
+      "tags": [
+        "fedora-42",
+        "fedora-44",
+        "fedora-eln",
+        "fedora-rawhide",
+        "rhel-11"
+      ]
+    },
+    {
+      "definition": {
+        "params": null,
         "value": "x86_64 aarch64 ppc64le"
       },
       "tags": [
@@ -3240,14 +3309,9 @@
         "centos-stream+epel-10",
         "centos-stream-10",
         "epel-10",
-        "fedora-42",
         "fedora-43",
-        "fedora-44",
-        "fedora-eln",
-        "fedora-rawhide",
         "rhel+epel-10",
-        "rhel-10",
-        "rhel-11"
+        "rhel-10"
       ]
     },
     {
