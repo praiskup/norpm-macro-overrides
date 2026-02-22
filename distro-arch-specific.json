@@ -2007,9 +2007,7 @@
         "value": "x86_64 armv3l armv4b armv4l armv4tl armv5tl armv5tel armv5tejl armv6l armv6hl armv7l armv7hl armv7hnl armv8l armv8hl armv8hnl armv8hcnl aarch64 ppc64le s390x"
       },
       "tags": [
-        "alma+epel-9",
         "almalinux-9",
-        "centos-stream+epel-next-9",
         "centos-stream-9",
         "mageia-9",
         "rhel-9"
@@ -2021,6 +2019,8 @@
         "value": "x86_64 aarch64 ppc64le s390x"
       },
       "tags": [
+        "alma+epel-9",
+        "centos-stream+epel-next-9",
         "epel-9",
         "rhel+epel-9"
       ]
@@ -2030,7 +2030,7 @@
     {
       "definition": {
         "params": "az:svifL",
-        "value": "BuildRequires: go-rpm-macros\n%if \"%{-m}\" == \"\"\nExclusiveArch: %{golang_arches}\n%else\nExclusiveArch: %{golang_arches_future}\n%endif\n"
+        "value": "BuildRequires: go-rpm-macros\n%if \"%{-f}\" == \"\"\nExclusiveArch: %{golang_arches}\n%else\nExclusiveArch: %{golang_arches_future}\n%endif\n"
       },
       "tags": [
         "alma+epel-10",
@@ -2825,7 +2825,6 @@
         "value": "i386 i486 i586 i686 pentium3 pentium4 athlon geode x86_64 sparc sparcv9 ia64 armv3l armv4b armv4l armv4tl armv5tl armv5tel armv5tejl armv6l armv6hl armv7l armv7hl armv7hnl aarch64 alpha s390x ppc ppc64 ppc64le"
       },
       "tags": [
-        "centos-stream+epel-next-8",
         "centos-stream-8",
         "rhel-8"
       ]
@@ -2848,6 +2847,7 @@
         "value": "i386 i486 i586 i686 pentium3 pentium4 athlon geode x86_64 sparc sparcv9 ia64 armv3l armv4b armv4l armv4tl armv5tl armv5tel armv5tejl armv6l armv6hl armv7l armv7hl armv7hnl alpha s390x ppc ppc64 ppc64le"
       },
       "tags": [
+        "centos-stream+epel-next-8",
         "epel-8",
         "rhel+epel-8"
       ]
